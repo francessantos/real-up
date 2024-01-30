@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>UP: Interactive Tool for Smart Real-Estate Marketplace</title>
+
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="static/css/materialize.css">
+  <link rel="stylesheet" type="text/css" href="static/favicon.ico">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="col s12 m12">
+        <h3>Showing {{ data['number_of_markers'] }} properties available for rent in {{ data['city']}}</h3>
+      </div>
+    </div>
+  </div>
+
+  {% include "map.html" %}
+
+</body>
+
+</html>
