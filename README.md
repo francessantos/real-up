@@ -6,7 +6,7 @@
 
 REAL-UP is an interactive tool designed to enrich real-estate marketplaces. In addition to information commonly provided by such applications, e.g., rent price, REAL-UP also provides subjective neighborhood information based on Location-Based Social Network messages. This novel tool helps to represent complex users’ subjective perceptions of urban areas, easing the process of finding the best accommodation.
 
-
+**You can access the REAL-UP app at:** https://realup-hmdwwwg27a-uc.a.run.app
 
 Please, cite the paper if you use or discuss REAL-UP's code or data in your work:
 
@@ -21,7 +21,9 @@ Please, cite the paper if you use or discuss REAL-UP's code or data in your work
 }
 ```
 
-## Clone the project and make some tests
+## Run REAL-APP locally
+
+### Clone the project and make some tests
 
 1. Install Git and Clone the project
 
@@ -40,7 +42,7 @@ python realup_server.py
 
 3. Access REAL-UP's homepage in your web browser: http://0.0.0.0:8080
 
-## Docker
+### Docker
 
 1. Install Docker
 
