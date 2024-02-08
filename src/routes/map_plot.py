@@ -41,6 +41,8 @@ class Plot():
         self.path = f"data/{city}"
         self.map_name = 'templates/map.html'
         self.max_length = 64
+        self.max_properties = 10000 #Useful to avoid exceeding the response size limit of Cloud Run (32 MiB)
+        self.truncate_n_properties = True
         return
 
 
@@ -55,6 +57,8 @@ class Plot():
         df = df[['id', 'room_type', 'neighbourhood',
                  'latitude', 'longitude', 'price']]
 
+        if self.truncate_n_properties and df.shape[0]>self.max_properties:
+           df =  df.sample(n = self.max_properties, random_state=27).reset_index()
         return df
 
 
